@@ -1,0 +1,96 @@
+#backgroundImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.75;
+}
+.weather-box {
+  background-color: rgba(255, 255, 255, 0);
+  display: block;
+  margin: 30px auto;
+  width: 900px;
+  height: 600px;
+  border-radius: 20px;
+  max-width: 80%;
+}
+.find-city {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+.enter-city {
+  width: 40%;
+  margin: 8px 0;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: solid 1px rgba(100, 148, 237, 0.4);
+  background-color: rgba(100, 148, 237, 0.4);
+  box-sizing: border-box;
+}
+.search {
+  width: 20%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  margin-left: 20px;
+  border-radius: 5px;
+  border: solid 1px rgba(206, 208, 211, 0.4);
+  background-color: rgba(206, 208, 211, 0.4);
+  box-sizing: border-box;
+}
+#geolocationButton {
+  width: 20%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  margin-left: 20px;
+  border-radius: 5px;
+  border: solid 1px rgba(44, 114, 219, 0.4);
+  background-color: rgba(44, 114, 219, 0.4);
+  box-sizing: border-box;
+  color: black;
+}
+.p-3 {
+  margin-top: 30px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.col-4 {
+  font-size: 20px;
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+.current col-4 {
+  margin-left: 20px;
+}
+#currentCity {
+  color: rgba(23, 96, 155, 0.9);
+  font-size: 40px;
+}
+.currentTemperature {
+  color: rgba(23, 96, 155, 0.9);
+  font-size: 52px;
+}
+
+.day {
+  color: rgba(23, 96, 155);
+  font-weight: 36px;
+  margin-bottom: 10px;
+}
+.temperature {
+  color: rgba(23, 96, 155);
+  font-weight: 46px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.units {
+  position: relative;
+  top: -32px;
+  font-size: 18px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="video-background" id="backgroundImage">
+      <video autoplay loop muted plays-inine>
+        <source src="src/06_1596083776.mp4" />
+      </video>
+    </div>
+    <div class="weather-box">
+      <form class="find-city" style="display: flex">
+        <input
+          type="text"
+          name="enter-city"
+          placeholder="Enter your city"
+          class="enter-city form-control border-0 shadow"
+          autofocus="on"
+        />
+        <input
+          type="submit"
+          name="search"
+          value="Search"
+          class="search shadow btn btn-secondary"
+        />
+        <button id="geolocationButton">Current</button>
+      </form>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div id="currentCity"></div>
+            <div id="currentDate"></div>
+          </div>
+          <div class="col-4">
+            <img
+              class="current-image"
+              src="src/rain.png"
+              alt="sun&cloud"
+              width="200px"
+            />
+          </div>
+          <div class="col-4">
+            <div class="currentTemperature">
+              <span class="degrees" id="degrees">21</span>
+              <span class="units">
+                <a href="#" id="celsium"> °C </a>
+                |
+                <a href="#" id="farenheit"> °F </a>
+              </span>
+            </div>
+            <div id="weatherDescription"></div>
+            <div class="humidity">
+              Humidity: <span id="humidity"> 44</span>%
+            </div>
+            <div class="wind">Wind: <span id="wind"> 5 </span>km/h</div>
+          </div>
+        </div>
+        <div></div>
+
+        <div class="container px-4 text-center">
+          <div class="row gx-2">
+            <div class="col">
+              <div class="p-3">
+                <div class="day">Tue 14</div>
+                <img src="src/sun-cloud.png" width="80px" />
+                <div class="temperature">+25°C</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3">
+                <div class="day">Wed15</div>
+                <img src="src/rain.png" width="80px" />
+                <div class="temperature">+20°C</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3">
+                <div class="day">Thu 16</div>
+                <img src="src/rain.png" width="80px" />
+                <div class="temperature">+19°C</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3">
+                <div class="day">Fri 17</div>
+                <img src="src/grim.png" width="80px" />
+                <div class="temperature">+16°C</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3">
+                <div class="day">Sat 18</div>
+                <img src="src/sun-cloud.png" width="80px" />
+                <div class="temperature">+23°C</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
