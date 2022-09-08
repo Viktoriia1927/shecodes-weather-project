@@ -94,3 +94,9 @@ li {
   top: -32px;
   font-size: 18px;
 }
+#openSource {
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+}
